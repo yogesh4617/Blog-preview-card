@@ -103,7 +103,7 @@ footer {
 }
 @media (min-width: 1024px) {
     .container {
-        max-width: 200px; /* Increase the container's width */
+        max-width: 280px; /* Increase the container's width */
         padding: 20px; /* Add more padding */
         min-height: 7%;
     }
