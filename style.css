@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(47, 88%, 63%);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 8px 0px 1px rgb(0, 0, 0);
+    border: 1.5px solid black;
+    background-color: white;
+    max-height: 460px;
+    min-height: 360px;
+    min-width: 260px;
+    max-width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Figtree';
+    font-weight: 500;
+}
+
+#picture{
+    border-radius: 10px;
+    width: 100%; /* Ensure it spans the container width */
+    height: auto; /* Adjust height automatically based on content */
+    min-height: 185px; /* Constrain height for smaller screens */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    display: block;
+    border-radius: 10px;
+}
+
+.content{
+    margin: 0.5rem ;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#lrn{
+    border: 1px solid black;
+    background-color:  hsl(47, 88%, 63%);
+    border-radius: 6px;
+    padding: 5.4px;
+    margin-top: 15px;
+    width: 4em;
+    padding-left: 15px ;
+    padding-right: 15px;
+    font-weight: bolder;
+    border: 0;
+}
+#dat{
+    margin-top: 17px;
+    font-size: 13px;
+}
+#prgm{
+    font-weight: 800;
+    margin-top: 20px;
+}
+#cnpt{
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    unicode-bidi: isolate;
+    color:   hsl(0, 0%, 42%);
+}
+#mbr{
+    display: flex;
+    margin-top: 25px;
+    justify-content: start;
+    align-items: center;
+    font-weight: bolder;
+}
+#img{
+    padding-left: 0;
+    max-width: 35px;
+    max-height: 35px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.mbr1{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 12px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f19c;
+    box-shadow: -1px -1px 9px 1px rgba(0, 0, 0, 0.747);
+    padding: 10px;
+    text-align: center;
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 200px; /* Increase the container's width */
+        padding: 20px; /* Add more padding */
+        min-height: 7%;
+    }
+    #picture {
+        height: 250px; /* Noticeably larger height for laptops */
+        max-height: none; /* Remove height constraint for larger screens */
+        object-fit: cover;
+    }
+    #cnpt{
+        margin-top: 20px;
+    }
+    #mbr{
+        margin-top: 25px;
+    }
+
+    #img {
+        max-width: 40px; /* Increase the size of the image */
+        max-height: 40px;
+    }
+
+    .mbr1 {
+        font-size: 1.2rem; /* Increase font size for better visibility */
+    }
+
+    #prgm {
+        font-size: 1.4rem; /* Adjust heading size */
+        font-weight: 700;
+    }
+}
